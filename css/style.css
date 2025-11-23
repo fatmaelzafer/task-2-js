@@ -6,150 +6,54 @@
 
 body
 {
-    background-color: #F7ECDE;
+    background-color: #0D0D0D;
+    position: relative;
 }
-/* start page */
-section
+.logo-img
 {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.btn{
-    background-color: rgb(221, 47, 16);
-    color: white;
-    width: 150px;
-    margin-left: 48%;
-}
-.btn:hover
-{
-    background-color: #BB4120;
-    color: white;
-}
-.formstyle
-{
-    border-color: black;
-    border-style: dotted;
-    border-left: 0;
-    border-right: 0;
-}
-.formtitle
-{
-    background-image: linear-gradient(to right, #3ca55c, #bcb248);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-family: "Righteous",cursive;
-    font-size: 25px;
-    font-weight: 500;
-}
-h1{
-    font-family: "Pacifico";
-    font-size: 50px;
-    font-weight: 500;
-}
-.formstyle input:focus
-{
-    border-color: #d99c39 ;
-    box-shadow: 0 0 0 0.25rem #e6991d55 ;
-}
-#message
-{
-    background-color: #14141458;
-    position: absolute;
-    
-    left: 0;
-    top: 0;
-}
-#message p{
-    font-family: "Bree Serif", serif;
-    font-size: 21px;
-    font-weight: 400;
+    width: 50px;
+    height: 50px;
 }
 
-.s1
+.mycard
 {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #F15F5D;
-    position: absolute;
-    margin-left: 10px;
-}
-.s2
-{
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #FEBE2E;
-    position: absolute;
-    margin-left: 4%;
-}
-.s3
-{
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #4DB748;
-    position: absolute;
-    margin-left: 7.5%;
-}
-li{
-    font-family: "PT Sans Caption";
-    font-size: 18px;
-    font-weight: 400;
-}
-li i{
-    color: #BB4120;
-}
-.visit {
-    background-color: #a7bc3e;
-    border: 0;
-    border-radius: 10px;
-    width: 100px;
-    height: 35px;
-}
-.visit:hover
-{
-    background-color: #9EB23B;
-}
-.delete
-{
-    background-color: rgb(251, 28, 28);
-    border: 0;
-    border-radius: 10px;
-    width: 100px;
-    height: 35px;
-}
-.delete:hover
-{
-    background-color: #EB1D36;
-}
-.title h1
-{
+    background-image:url("../imgs/imgi_3_1550441882.jpg") ;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
     position: relative;
     overflow: hidden;
 }
-.title h1::before
+.mycard .card-body
 {
-     content: "Bookmarker";
-     position: absolute;
-     font-family: "Pacifico";
-    font-size: 50px;
-    font-weight: 500;
-    z-index: 9999;
-}
-.title h1::after
-{
-    content: "";
     position: absolute;
-    background-color: #FEC260;
-    transition: height .5s;
+    bottom: -100%;
+    transition: all .5s ease-in-out;
+    align-items: center;
     width: 100%;
-    height: 40%;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    background-color: rgba(241, 244, 246, 0.7);
 }
-.title h1:hover::after 
+.mycard .card-body h3{
+    font-weight: 500;
+    font-size: 25.5px;
+}
+.mycard:hover .card-body
 {
-    height: 70%;
+     display: flex;
+     bottom: 0;
+}
+.myNavbar
+{
+    z-index: 1;
+    
+}
+.nav-header
+{
+    transition: all .5s ease-in-out;
+}
+.nav-tab
+{
+    transition: all .5s ease-in-out;
+    left: -257px;
 }

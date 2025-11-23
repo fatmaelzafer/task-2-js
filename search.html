@@ -77,16 +77,31 @@
                 </div>
             </div>
         </div>
+        <div class="container ">
+            <div class="row">
+                <div class="  col-sm-12 col-lg-6 pt-5 bg-black text-white">
+                    <input type="text" class="form-control bg-black text-white" id="floatingInput"
+                        placeholder="Search By Name" oninput="searchdata()">
+
+                </div>
+                <div class=" col-sm-12 col-lg-6 pt-5">
+                    <input type="" class="form-control bg-black text-white" id="floatingInput"
+                        placeholder="Search By First Letter" maxlength="1" oninput="">
+                </div>
+            </div>
+        </div>
         <div class="container pt-5">
-            <div class="row g-4" id="dataRows">
-                <a href="./display.html" class="col-lg-3 col-sm-12 text-decoration-none">
-                    <div class="card mycard" style="">
-                        <div class="card-body  ">
-                            <h3></h3>
+            <div class="row g-4" id="dataRowsSearch">
+                <button class="col-lg-3 col-sm-12 text-decoration-none border-0 bg-black" onclick="displayData()">
+                    <a href="./display.html" class=" text-decoration-none border-0 bg-black">
+                        <div class="card mycard" style="">
+                            <div class="card-body  ">
+                                <h3>${strMeal}</h3>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                
+                    </a>
+                </button>
+
             </div>
         </div>
     </div>
